@@ -36,6 +36,16 @@ fetch('emg_data.csv')
         const aboveAverageElement = document.getElementById('above-average');
         aboveAverageElement.textContent = `Data above average: ${aboveAverageData.join(', ')}`;
 
+        // Mostrar el mensaje de entrenamiento dependiendo del número de datos por encima del promedio
+        const messageElement = document.getElementById('training-message');
+        if (aboveAverageData.length >= 20) {
+            messageElement.textContent = 'Entrenamiento completamente eficiente';
+        } else if (aboveAverageData.length >= 15) {
+            messageElement.textContent = 'Entrenamiento eficiente';
+        } else {
+            messageElement.textContent = 'Entrenamiento no eficiente';
+        }
+
         // Crear el gráfico de líneas con Chart.js
         const ctx = document.getElementById('emg-chart').getContext('2d');
         new Chart(ctx, {
@@ -73,3 +83,4 @@ fetch('emg_data.csv')
         });
     })
     .catch(error => console.error('Error al cargar el archivo:', error));
+
