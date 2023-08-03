@@ -8,6 +8,20 @@
 <body>
     <div class="container">
         <h1>EMG Data</h1>
+        <div class="banner">
+            <div class="banner-two-left">
+                <canvas id="emg-chart" width="400" height="200"></canvas>
+            </div>
+            <div class="banner-two-right">
+                <p id="average">Average: </p>
+                <p id="above-average">Data above average: </p>
+                <p id="training-message"></p> <!-- Agrega este elemento con el id "training-message" -->
+                <div class="btn-group">
+                    <a href="datosemg/index.html" class="btn btn-white">Learn More</a>
+                    <a href="#" class="btn btn-light-blue">Sign In</a>
+                </div>
+            </div>
+        </div>
         <table>
             <thead>
                 <tr>
@@ -18,11 +32,6 @@
             <tbody id="emg-data-table">
             </tbody>
         </table>
-        <p id="average">Average: </p>
-        <p id="above-average">Data above average: </p>
-        <div class="chart-container">
-            <canvas id="emg-chart"></canvas>
-        </div>
     </div>
 
     <script src="script/script.js"></script>
