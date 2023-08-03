@@ -41,10 +41,18 @@ table tr:hover {
     margin: 20px auto;
 }
 
-#average, #above-average {
+#average, #above-average, #training-message {
     text-align: center;
     font-size: 16px;
     margin: 10px 0;
+}
+
+#above-average {
+    color: #007bff; /* Azul */
+}
+
+#training-message {
+    font-weight: bold;
 }
 
 .chart-container canvas {
