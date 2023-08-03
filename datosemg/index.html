@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMG Data</title>
+    <link rel="stylesheet" href="estilostabla/estilotabla.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>EMG Data</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>EMG Data</th>
+                </tr>
+            </thead>
+            <tbody id="emg-data-table">
+            </tbody>
+        </table>
+        <p id="average">Average: </p>
+        <p id="above-average">Data above average: </p>
+        <div class="chart-container">
+            <canvas id="emg-chart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
