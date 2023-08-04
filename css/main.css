@@ -2,8 +2,8 @@
 
 /* variables */
 :root{
-    --fros-blue-color: #0050d5;
-    --light-blue-color: #16c5ff;
+    --fros-blue-color: #e7b81e;
+    --light-blue-color: #1f3a7b;
     --dark-color: #202020;
     --light-gray: #dedede;
     --dark-gray: #a1a1a0;
@@ -347,7 +347,7 @@ button[class ^= navbar]:hover{
 }
 .about-right .img{
     width: 100%;
-    background-color: #3983fe;
+    background-color: #0d66cb;
     max-width: 537px;
     position: relative;
 }
@@ -366,7 +366,7 @@ button[class ^= navbar]:hover{
 .about-right .img::after{
     top: -56px;
     left: 0;
-    background-color: #0060ff;
+    background-color: #114ba8;
     z-index: -1;
 }
 .about-right .img::before{
