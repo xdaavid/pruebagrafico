@@ -59,3 +59,35 @@ table tr:hover {
     max-width: 100%;
     height: auto;
 }
+/* header */
+.header{
+    min-height: 100vh;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3.2rem 0;
+    z-index: 999;
+}
+.navbar .container{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.navbar-brand img{
+    width: 168px;
+}
+.navbar-show-btn, .navbar-hide-btn{
+    background-color: transparent;
+    width: 30px;
+    -webkit-transition: var(--transition);
+    -o-transition: var(--transition);
+    transition: var(--transition);
+}
+button[class ^= navbar]:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
