@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMG Data - Page 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>EMG Data - Page 2</h1>
+        <div class="banner">
+            <div class="banner-two-left">
+                <canvas id="emg-chart" width="400" height="200"></canvas>
+            </div>
+            <div class="banner-two-right">
+                <p id="average">Average: </p>
+                <p id="above-average">Data above average: </p>
+                <p id="training-message">Training efficiency</p>
+                <div class="btn-group">
+                    <a href="datosemg/index.html" class="btn btn-white">Learn More</a>
+                    <a href="#" class="btn btn-light-blue">Sign In</a>
+                </div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>EMG Data (File 1)</th>
+                </tr>
+            </thead>
+            <tbody id="emg-data-table-1">
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Index</th>
+                    <th>EMG Data (File 2)</th>
+                </tr>
+            </thead>
+            <tbody id="emg-data-table-2">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script_2.js"></script>
+</body>
+</html>
